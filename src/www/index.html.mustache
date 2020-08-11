@@ -42,12 +42,17 @@
 
         <div id="mx-login-container" class="mx-hybridapp-wrapper">
           <div class="mx-hybridapp-login">
-            <div id="mx-login-error" class="mx-hybridapp-title">Sign in</div>
-            <div class="mx-hybridapp-formgroup">
-              <input id="mx-username" class="mx-hybridapp-formgroup-input" type="text" autocorrect="off" autocapitalize="none" placeholder="User name">
-              <input id="mx-password" class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" placeholder="Password">
+            <div id="mx-login-error" class="mx-hybridapp-title mx-hybridapp-text-center">
+              <div class="mx-hybridapp-logo"></div>
+              <p>เข้าสู่ระบบ</p>
+              <p>SIGN IN</p>
             </div>
-            <button id="mx-execute-login" class="mx-hybridapp-button">Sign in</button>
+            <div class="mx-hybridapp-formgroup">
+              <input id="mx-username" class="mx-hybridapp-formgroup-input" type="text" autocorrect="off" autocapitalize="none" placeholder="Username">
+              <input id="mx-password" class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" placeholder="Password">
+              <input id="mx-show-password" type="checkbox" onchange="javascript:showPassword(this);"><label> แสดงรหัสผ่าน</label> 
+            </div>
+            <button id="mx-execute-login" class="mx-hybridapp-button">SIGN IN</button>
           </div>
         </div>
 
@@ -69,5 +74,15 @@
         </div>
 
         <script src="cordova.js"></script>
+        <script type="text/javascript">
+        function showPassword(obj){
+          var input_password = document.getElementById('mx-password')
+          if (obj.checked) {
+            input_password.type = "text";
+          } else {
+            input_password.type = "password";
+          }
+        }
+        </script>
     </body>
 </html>

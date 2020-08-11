@@ -34,7 +34,7 @@ button, input, select, textarea {
 .mx-hybridapp-title,
 .mx-hybridapp-forget-button {
     background: none;
-    color: #fff;
+    color: {{theme.text}};
 }
 
 {{#loaderCss}}
@@ -63,7 +63,7 @@ button, input, select, textarea {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: rgba(255,255,255, 0.7);
+    border-top-color: rgba(0,49,150, 0.7);
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -77,7 +77,7 @@ button, input, select, textarea {
     bottom: 5px;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-top-color: rgba(255,255,255, 0.5);
+    border-top-color: rgba(0,49,150, 0.5);
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -91,7 +91,7 @@ button, input, select, textarea {
     bottom: 15px;
     border-radius: 50%;
     border: 1px solid transparent;
-    border-top-color: rgba(255,255,255, 0.3);
+    border-top-color: rgba(0,49,150, 0.3);
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
@@ -218,7 +218,7 @@ button, input, select, textarea {
     border-style: none;
     width: 100%;
     font-size: 16px;
-    padding: 15px 10px;
+    padding: 22px 10px;
     cursor: pointer;
     border-radius: 4px;
     -moz-transition-property: all;
@@ -237,7 +237,8 @@ button, input, select, textarea {
 
 .mx-hybridapp-title {
     /* can be removed after moving to base */
-    font-weight: normal;
+    font-weight: 600;
+    padding-bottom: 15px;
 }
 
 .mx-hybridapp-formgroup {
@@ -255,10 +256,12 @@ button, input, select, textarea {
     padding: 15px 10px;
     margin-bottom: 10px;
     width: 100%;
-    border: 1px solid #d7d7d7;
+    /* border: 1px solid #d7d7d7; */
     transition: border-width 0.2s ease;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     color: #ccc;
+    border: 0;
+    border-bottom: 1px solid #D7D7D7;
 }
 
 .mx-hybridapp-formgroup-input:focus,
@@ -342,6 +345,16 @@ button, input, select, textarea {
     to {
         opacity: 1;
     }
+}
+.mx-hybridapp-text-center {
+    text-align: center;
+}
+
+.mx-hybridapp-logo {
+    background-image: url('../img/logo.png');
+    width: 250px;
+    height: 173px;
+    margin: 0 auto;
 }
 
 {{{customCss}}}

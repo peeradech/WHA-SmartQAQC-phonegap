@@ -4,7 +4,7 @@
   "version" : "0.0.7",
   "name" : "WHA_Smart-QAQC",
   "description" : null,
-  "iosEnabled" : true,
+  "iosEnabled" : false,
   "androidEnabled" : true,
   "requirePin" : false,
   "enableOffline" : false,
@@ -18,9 +18,9 @@
     "push" : false
   },
   "theme" : {
-    "background" : "#0595DB",
-    "text" : "#ffffff",
-    "button" : "#76CA02",
+    "background" : "#ffffff",
+    "text" : "#003196",
+    "button" : "#005CFF",
     "buttonCaption" : "#ffffff"
   }
 }
