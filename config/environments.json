@@ -1,0 +1,7 @@
+{
+  "sandbox" : {
+    "name" : "WHA_Smart-QAQC",
+    "identifier" : "io.mxapps.whasmart-qaqc-sandbox",
+    "url" : "https://whasmart-qaqc-sandbox.mxapps.io"
+  }
+}
