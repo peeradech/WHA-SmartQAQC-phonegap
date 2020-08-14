@@ -19,8 +19,8 @@
   },
   "theme" : {
     "background" : "#ffffff",
-    "text" : "#003196",
-    "button" : "#005CFF",
+    "text" : "#ffffff",
+    "button" : "#CA0020",
     "buttonCaption" : "#ffffff"
   }
 }

@@ -42,14 +42,24 @@
 
         <div id="mx-login-container" class="mx-hybridapp-wrapper">
           <div class="mx-hybridapp-login">
-            <div id="mx-login-error" class="mx-hybridapp-title mx-hybridapp-text-center">
-              <div class="mx-hybridapp-logo"></div>
+            <div class="mx-valign-table" style="padding: 30px 0;">
+                <div class="mx-valign-cell mx-hybridapp-text-center">
+                    <img src="img/logo-white.png" width="50%">
+                </div>
+            </div>
+            <!-- <div id="mx-login-error" class="mx-hybridapp-title mx-hybridapp-text-center">
               <p>เข้าสู่ระบบ</p>
               <p>SIGN IN</p>
-            </div>
+            </div> -->
             <div class="mx-hybridapp-formgroup">
-              <input id="mx-username" class="mx-hybridapp-formgroup-input" type="text" autocorrect="off" autocapitalize="none" placeholder="Username">
-              <input id="mx-password" class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" placeholder="Password">
+              <div class="mx-hybridapp-group-input">
+                <div class="mx-hybridapp-placeholder">Username</div>
+                <input id="mx-username" class="mx-hybridapp-formgroup-input mx-hybridapp-input-placeholder" type="text" autocorrect="off" autocapitalize="none" style="margin-bottom: 0;border-radius: 8px 8px 0 0;">
+              </div>
+              <div class="mx-hybridapp-group-input">
+                <div class="mx-hybridapp-placeholder">Password</div>
+                <input id="mx-password" class="mx-hybridapp-formgroup-input mx-hybridapp-input-placeholder" type="password" autocorrect="off" autocapitalize="none" style="border-radius: 0px 0px 8px 8px;">
+              </div>
               <input id="mx-show-password" type="checkbox" onchange="javascript:showPassword(this);"><label> แสดงรหัสผ่าน</label> 
             </div>
             <button id="mx-execute-login" class="mx-hybridapp-button">SIGN IN</button>
