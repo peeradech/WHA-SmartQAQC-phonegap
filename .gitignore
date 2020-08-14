@@ -1,3 +1,4 @@
 node_modules
 dist/phonegap
 package-lock.json
+build

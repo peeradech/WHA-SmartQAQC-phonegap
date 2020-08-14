@@ -15,7 +15,7 @@
     "contacts" : false,
     "microphone" : false,
     "geoLocation" : true,
-    "push" : false
+    "push" : true
   },
   "theme" : {
     "background" : "#ffffff",

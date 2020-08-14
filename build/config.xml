@@ -64,6 +64,7 @@
         <plugin name="cordova-plugin-geolocation" source="npm" spec="4.0.1" />
 
 
+        <plugin name="phonegap-plugin-push" source="npm" spec="2.2.3" />
 
 
         <!-- The gradle build tool is required for the phonegap-plugin-push -->
@@ -118,6 +119,8 @@
                 <!-- Icon definitions - for more details: http://developer.android.com/guide/topics/resources/providing-resources.html -->
                     <icon src="res/android/icon-192-xxxhdpi.png" density="xxxhdpi"/>
 
+                <resource-file src="config/google-services.json" target="app/google-services.json" />
+                <hook type="after_prepare" src="scripts/before_build.js" />
         </platform>
 
     <splash src="res/android/screen-xxxhdpi-portrait.png" />
